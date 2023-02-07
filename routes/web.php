@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/adres-gir', [\App\Http\Controllers\AddressController::class, 'show'])->name('address');
+Route::post('/adres-gir', [\App\Http\Controllers\AddressController::class, 'store'])->name('address.action');
+Route::get('/adresler', [\App\Http\Controllers\AddressController::class, 'index'])->name('addresses');
