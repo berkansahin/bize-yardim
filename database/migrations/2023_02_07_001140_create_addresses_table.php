@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('addresses', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->index();
-            $table->text('address');
-            $table->string('phone')->index();
-            $table->string('city')->index();
-            $table->string('district')->index();
-            $table->string('status')->default('pending')->index();
+            $table->string('name')->nullable()->index();
+            $table->text('address')->nullable();
+            $table->string('phone')->nullable()->index();
+            $table->string('city')->nullable()->index();
+            $table->string('district')->nullable()->index();
+            $table->string('status')->nullable()->default('pending')->index();
             $table->timestamps();
         });
     }
