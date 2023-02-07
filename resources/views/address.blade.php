@@ -45,7 +45,7 @@
                                     <div class="input-group mb-3">
                                         <select class="form-control" name="city" placeholder="İl">
                                             <option value="">İl</option>
-                                            @foreach(['Malatya', 'Batman', 'Bingöl', 'Elazığ', 'Kilis','Diyarbakır', 'Mardin', 'Siirt', 'Şırnak'] as $city)
+                                            @foreach(['Adana', 'Adıyaman', 'Batman', 'Bingöl', 'Bitlis', 'Diyarbakır', 'Elazığ', 'Gaziantep', 'Hakkari', 'Hatay', 'Kahramanmaraş', 'Kilis', 'Malatya', 'Mardin', 'Mersin', 'Osmaniye', 'Şanlıurfa'] as $city)
                                             <option value="{{ $city }}">{{ $city }}</option>
                                             @endforeach
                                         </select>
