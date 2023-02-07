@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\HomeController::class, 'index']);
+Route::get('/', [\App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/adres-gir', [\App\Http\Controllers\AddressController::class, 'show'])->name('address');
 Route::post('/adres-gir', [\App\Http\Controllers\AddressController::class, 'store'])->name('address.action');
 Route::get('/adres-onayla/{id}', [\App\Http\Controllers\AddressController::class, 'approve'])->name('address.approve');

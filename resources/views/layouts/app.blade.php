@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!--required meta tags-->
     <meta charset="utf-8">
@@ -15,7 +14,7 @@
     <meta name="twitter:image" content="#">
 
     <!--facebook og-->
-    <meta property="og:url" content="#">
+    <meta property="og:url" content="{{ url('/') }}">
     <meta name="twitter:title" content="Bize Yardım">
     <meta property="og:description" content="Bize Yardım">
     <meta property="og:image" content="#">
@@ -28,9 +27,6 @@
     <meta name="description" content="Bize Yardım">
     <meta name="author" content="Bize Yardım">
 
-    <!--favicon icon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png" sizes="16x16">
-
     <!--title-->
     <title>Bize Yardım</title>
 
@@ -41,7 +37,6 @@
     <!--custom css start-->
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
     <!--custom css end-->
-
 </head>
 
 <body>

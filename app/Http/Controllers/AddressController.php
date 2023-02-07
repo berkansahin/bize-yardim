@@ -40,6 +40,6 @@ class AddressController extends Controller
 
         AddressJob::dispatch($params);
 
-        return redirect(route('address'));
+        return redirect(route('home'));
     }
 }
